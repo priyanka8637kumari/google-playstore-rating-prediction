@@ -2,11 +2,11 @@
 
 ## Motivation
 
-I wanted to work with a dataset that felt realistic, not just clean
+I wanted to work with a dataset that felt **realistic**, not just clean
 and ready to use. My first dataset(which I chose earlier) had no missing values at all,
 which meant I couldn't really show data cleaning skills.
 
-The Google Play Store dataset was different, it had genuine missing
+The **Google Play Store dataset** was different, it had genuine missing
 values, mixed formats, and dirty rows. That made it a better choice
 for practicing the full ML workflow, from messy raw data to a
 working model.
@@ -31,10 +31,10 @@ size, installs, and price.
 ### Problem and Dataset
 
 I chose to work on predicting whether a Google Play Store app is
-highly rated (4.0 or above). The dataset had 10,841 apps with 13
+highly rated (4.0 or above). The dataset had 10,841 rows with 13
 columns including category, reviews, size, installs, price, and rating.
 
-What I liked about this dataset was that it wasn't clean - it had
+What I liked about this dataset was that it wasn't clean. it had
 real missing values, mixed formats, and dirty rows. That made it
 more challenging but also more realistic.
 
@@ -95,13 +95,13 @@ I tested three models:
 | Random Forest (balanced) | 0.80 | 0.88 |
 
 The first model looked good at 79% accuracy but it was actually
-just predicting everything as highly rated — it completely failed
+just predicting everything as highly rated but it completely failed
 on low rated apps (recall 0.00 for class 0).
 
 I added class_weight='balanced' to fix this, but that overcorrected
 and the model started missing too many highly rated apps.
 
-Random Forest with balanced weights gave the best overall result —
+**Random Forest** with balanced weights gave the best overall result —
 80% accuracy with a good balance between catching both classes.
 
 ---
@@ -109,7 +109,7 @@ Random Forest with balanced weights gave the best overall result —
 ### Limitations and Reflection
 
 The biggest challenge was the imbalanced dataset — 79% of apps are
-highly rated, which kept confusing the models. This is a common
+highly rated, which kept confusing the models. I researched and found that this is a common
 problem in real-world classification tasks.
 
 In practice, this kind of model could help app developers understand
