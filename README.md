@@ -1,32 +1,6 @@
 # Google Play Store - App Rating Prediction
 
-## Motivation
-
-I wanted to work with a dataset that felt **realistic**, not just clean
-and ready to use. My first dataset(which I chose earlier) had no missing values at all,
-which meant I couldn't really show data cleaning skills.
-
-The **Google Play Store dataset** was different, it had genuine missing
-values, mixed formats, and dirty rows. That made it a better choice
-for practicing the full ML workflow, from messy raw data to a
-working model.
-
-The topic also felt familiar. As someone who builds apps, I've
-checked Play Store ratings before. Understanding what actually
-drives a high rating is something I found genuinely interesting
-to explore.
-
-The goal of the project is to predict whether an app is highly
-rated (4.0 or above) based on features like category, reviews,
-size, installs, and price.
-
-**Task type:** Classification  
-**Target variable:** High rating (1 = rated 4.0 or above, 0 = below 4.0)  
-**Dataset source:** Kaggle - Google Play Store Apps
-
----
-
-## Final Report
+## Report
 
 ### Problem and Dataset
 
